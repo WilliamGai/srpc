@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sonic</groupId>
-	<artifactId>sonic-rpc-parent</artifactId>
+	<artifactId>srpc-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -89,15 +89,9 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>core</module>
-		<module>consumer</module>
-		<module>provider</module>
-		<module>starter</module>
-		<module>excample-api</module>
-		<module>excample-provider</module>
-		<module>excample-consumer</module>
-    <module>srpc-excample</module>
-  </modules>
+   		<module>srpc-excample</module>
+   		<module>srpc</module>
+	</modules>
 	<build>
 		<plugins>
 			<plugin>
