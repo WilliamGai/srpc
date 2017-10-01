@@ -3,6 +3,7 @@
 rpc是基于Netty + Springboot + FastJson + zookeeper的简单实现
 
 ## 2. 项目结构
+``` xml
 srpc-parent
     |
     |
@@ -22,7 +23,7 @@ srpc-parent
     		|	
     		|----srpc-excample-provider
     
-    		
+```
 
 
 
