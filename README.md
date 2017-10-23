@@ -35,7 +35,7 @@ srpc-parent
 消费者引入srpc-consumer,将自己的属性添加注解@SReference即可  
 具体参考srpc-example的例子
 
-学习交流请联系 346126185@.com
+学习交流请联系 346126185@qq.com
 
 其他:  
 @SService和@SReference均不依赖Spring
