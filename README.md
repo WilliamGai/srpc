@@ -1,6 +1,6 @@
 # srpc即sonic-rpc
 ## 1. 介绍 
-rpc是基于Netty + Springboot + FastJson + zookeeper的简单实现
+rpc是基于Netty + Springboot(仅IOC) + FastJson + Zookeeper的简单实现
 
 ## 2. 项目结构
 ``` xml

@@ -16,6 +16,11 @@ import io.netty.handler.codec.http.HttpRequestDecoder;
 import io.netty.handler.codec.http.HttpResponseEncoder;
 
 public class NettyHttpServer {
+	/***
+	 * @param port
+	 * @param httpCall
+	 * @throws Exception TODO ChannelHandler是可以添加多个的所以这里以后可能改一下传入参数
+	 */
 	public void start(int port, Function<String, String> httpCall) throws Exception {
 		EventLoopGroup bossGroup = new NioEventLoopGroup();
 		EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -42,9 +47,9 @@ public class NettyHttpServer {
 		}
 	}
 
-	 public static void main(String[] args) throws Exception {
-	 NettyHttpServer server = new NettyHttpServer();
-	 LogCore.BASE.info("Http Server listening on 8844 ...");
-	 server.start(8844,msg -> msg);
-	 }
+	public static void main(String[] args) throws Exception {
+		NettyHttpServer server = new NettyHttpServer();
+		LogCore.BASE.info("Http Server listening on 8844 ...");
+		server.start(8844, msg -> msg);
+	}
 }

@@ -27,5 +27,7 @@
 		<module>srpc-consumer</module>
 		<module>srpc-provider</module>
 		<module>srpc-starter</module>
-	</modules>
+		<module>http</module>
+		<module>srpc-http</module>
+		</modules>
 </project>

@@ -1,0 +1,3 @@
+###
+implements BeanFactoryPostProcessor, ApplicationContextAware
+实现将SService注入到容器中

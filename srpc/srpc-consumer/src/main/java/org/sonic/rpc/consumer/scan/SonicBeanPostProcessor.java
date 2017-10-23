@@ -11,8 +11,10 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
+
 /***
  * 修改注入IOC的逻辑,将SReference注解的属性用代理类替换
+ * 
  * @author bao
  * @date 2017年8月18日 下午6:40:15
  */
@@ -23,7 +25,10 @@ public class SonicBeanPostProcessor implements BeanPostProcessor, ApplicationCon
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		LogCore.BASE.info("beanName={}, bean={}", beanName, bean.getClass());
-		// 强制检索属性有无SReference
+		/*
+		 * 强制检索属性有无SReference<br> TODO
+		 * hasAnnotation()可优化 类上是否有注解
+		 */
 		if (hasAnnotation(bean.getClass().getAnnotations(), SReference.class.getName())) {
 			Class<?> beanClass = bean.getClass();
 			do {
@@ -33,6 +38,7 @@ public class SonicBeanPostProcessor implements BeanPostProcessor, ApplicationCon
 				}
 			} while ((beanClass = beanClass.getSuperclass()) != null);
 		} else {
+			// 字段上有无注解
 			processMyInject(bean);
 		}
 		return bean;
@@ -63,6 +69,7 @@ public class SonicBeanPostProcessor implements BeanPostProcessor, ApplicationCon
 		}
 	}
 
+	/*** TODO 这段可以被优化掉 */
 	private boolean hasAnnotation(Annotation[] annotations, String annotationName) {
 		if (annotations == null) {
 			return false;

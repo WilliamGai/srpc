@@ -3,8 +3,8 @@ package org.sonic.rpc.core;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 线程安全的正整数,参考了JDK1.7 AtomicInteger 如何让自增永远为正整数? 其他的方案一种是取绝对值,还有一种是将数值跟Integer.MAX_VALUE 做& 操作这样可以将最高位表示负数的1置为0
- * 
+ * 线程安全的正整数,参考了JDK1.7 AtomicInteger 如何让自增永远为正整数? <br>
+ * 其他的方案一种是取绝对值,还有一种是将数值跟Integer.MAX_VALUE 做& 操作这样可以将最高位表示负数的1置为0
  * @author bao
  * @date 2017年8月3日 下午3:56:13
  */

@@ -29,6 +29,7 @@ public class NettyHttpServerInboundHandler extends ChannelInboundHandlerAdapter 
 
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+		LogCore.BASE.info("msg is{}", msg.getClass().getCanonicalName());
 		if (HttpRequest.class.isInstance(msg)) {
 			request = (HttpRequest) msg;
 
