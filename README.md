@@ -30,9 +30,9 @@ srpc-parent
 
 
 
-使用方法:
-服务提供者引入srpc-provider，将自己的服务用SService注解标注
-消费者引入srpc-consumer,将自己的属性添加注解@SReference即可
+使用方法:  
+服务提供者引入srpc-provider，将自己的服务用SService注解标注  
+消费者引入srpc-consumer,将自己的属性添加注解@SReference即可  
 具体参考srpc-example的例子
 
 
