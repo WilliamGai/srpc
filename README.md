@@ -1,7 +1,7 @@
-# srpc
-## srpc即sonic-rpc
+# SRPC
+## SRPC即sonic-rpc
 ## 1. 介绍 
-rpc是基于Netty + Springboot(仅IOC) + FastJson + Zookeeper的简单实现
+SRPC是基于Netty + Springboot(仅IOC) + FastJson + Zookeeper的最简单实现，可以轻松扩展成自己需要的RPC实现或者作为学习使用
 
 ## 2. 项目结构
 ``` xml
