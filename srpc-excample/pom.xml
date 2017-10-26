@@ -8,8 +8,8 @@
 		<artifactId>srpc-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>srpc-demo</artifactId>
-	<name>srpc-demo</name>
+	<artifactId>srpc-excample</artifactId>
+	<name>srpc-excample</name>
 	<packaging>pom</packaging>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -23,8 +23,8 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>srpc-demo-api</module>
-		<module>srpc-demo-provider</module>
-		<module>srpc-demo-consumer</module>
+		<module>srpc-excample-api</module>
+		<module>srpc-excample-provider</module>
+		<module>srpc-excample-consumer</module>
 	</modules>
 </project>

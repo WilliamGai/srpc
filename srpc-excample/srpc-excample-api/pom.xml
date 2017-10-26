@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.sonic</groupId>
-		<artifactId>srpc-demo</artifactId>
+		<artifactId>srpc-excample</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>srpc-demo-api</artifactId>
-	<name>sonic-srpc-demo-api</name>
+	<artifactId>srpc-excample-api</artifactId>
+	<name>sonic-srpc-excample-api</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
